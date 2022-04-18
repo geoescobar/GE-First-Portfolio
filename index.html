@@ -1,80 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>George's Portfolio</title>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
 
+  <body>
     <header id="top-of-page">
-
-        <nav>
-            <div class="nav-wrapper black">
-              <a href="#" class="brand-logo"><img class="logo" src="./assets/logo.png" alt="logo" /></a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="links"><a class="waves-effect waves-light" href="#welcome-page">Home</a></li>
-                <li class="links"><a class="waves-effect waves-light" href="#who-am-i">About</a></li>
-                <li class="links"><a class="waves-effect waves-light" href="#sample-work">Projects</a></li>
-                <li class="links"><a class="waves-effect waves-light" href="#contact-me">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
+      <nav>
+        <div class="nav-wrapper black">
+          <a href="#" class="brand-logo"
+            ><img class="logo" src="./assets/logo.png" alt="logo"
+          /></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="links">
+              <a class="waves-effect waves-light" href="#welcome-page">Home</a>
+            </li>
+            <li class="links">
+              <a class="waves-effect waves-light" href="#who-am-i">About</a>
+            </li>
+            <li class="links">
+              <a class="waves-effect waves-light" href="#sample-work"
+                >Projects</a
+              >
+            </li>
+            <li class="links">
+              <a class="waves-effect waves-light" href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <section class="homepage">
-        <h1>Welcome</h1>
-        <p>Hello! Welcome to my portfolio. Scroll down to learn more about me and my journey as a full stack software
-            developer.</p>
+      <h1>Welcome</h1>
+      <p>
+        Hello! Welcome to my portfolio. Scroll down to learn more about me and
+        my journey as a full stack software developer.
+      </p>
     </section>
 
     <section id="who-am-i" class="about-me">
-        <a href="#top-of-page">Back</a>
-        <img class="avi" src="./assets/cabo.jpg" alt="selfie" />
-        <h2>About Me</h2>
-        <p>I'm George Escobar! I'm from Dallas, TX and I'm twenty-four years old. Some of my hobbies are playing soccer
-            and watching sports. I also enjoiy going out to eat with my girlfriend and we love to travel too! Our
-            favorite place we've gone to so far is Cabo! My goal is to land a job as a front end engineer for a tech
-            company and be able to showcase the skills I was able to learn at SMU.</p>
+      <!-- <a href="#top-of-page">Back</a> -->
+       <!-- Dropdown Trigger -->
+       <a class="dropdown-trigger btn light-blue darken-4" href="#" data-target="dropdown1">
+        <i class="material-icons">menu</i></a
+      >
+
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#welcome-page">Home</a></li>
+        <li><a href="#who-am-i">About Me</a></li>
+        <li><a href="#sample-work">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+        <div class="about-container">
+            <div class="about-text">
+                <h2 id="about-title">About Me</h2>
+                <p>
+                  I'm George Escobar! I'm from Dallas, TX and I'm twenty-four years
+                  old. Some of my hobbies are playing soccer and watching sports. I
+                  also enjoiy going out to eat with my girlfriend and we love to
+                  travel too! Our favorite place we've gone to so far is Cabo! My goal
+                  is to land a job as a front end engineer for a tech company and be
+                  able to showcase the skills I was able to learn at SMU.
+                </p>
+              </div>
+              <div class="image-container">
+                <img class="avi" src="./assets/cabo.jpg" alt="selfie" />
+              </div>
+        </div>
+       
     </section>
 
     <section id="sample-work">
-        <div class="work">
-            <h2>Recent Projects</h2>
-            <p>Below are some recent projects I've been working on! Varrying for multiple different uses they all hold
-                unique qualities. Check them out! </p>
+      <div class="work">
+        <!-- Dropdown Trigger -->
+        <a class="dropdown-trigger btn light-blue darken-4" href="#" data-target="dropdown1">
+          <i class="material-icons">menu</i></a
+        >
 
-                <div class="row">
-                    <div class="col s12 waves-effect waves-light"><a href="https://github.com/geoescobar/Weather-Dashboard" target="_blank" class="projects"><img class="project-img" src="./assets/weather-dashboard.png"/></a></div>
-                    <div class="col s6 waves-effect waves-light"><a href="https://github.com/geoescobar/Project1" target="_blank" class="projects"><img class="project-img" src="./assets/titan-tickets.png"/></a></div>
-                    <div class="col s6 waves-effect waves-light"><a href="https://github.com/geoescobar/Code-Quiz-GE" target="_blank" class="projects"><img class="project-img" src="./assets/code-quiz.png"/></a></div>
-                    <div class="col s6 waves-effect waves-light"><a href="https://github.com/geoescobar/Workday-Scheduler" target="_blank" class="projects"><img class="project-img" src="./assets/workday-scheduler.png"/></a></div>
-                    <div class="col s6 waves-effect waves-light"><a href="https://github.com/geoescobar/Password-Generator" target="_blank" class="projects"><img class="project-img" src="./assets/password-generator.png"/></a></div>
-                  </div>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#welcome-page">Home</a></li>
+            <li><a href="#who-am-i">About Me</a></li>
+            <li><a href="#sample-work">Projects</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+        <h2>Recent Projects</h2>
+        <p>
+          Below are some recent projects I've been working on! Varrying for
+          multiple different uses they all hold unique qualities. Check them
+          out!
+        </p>
 
-
+        <div class="row">
+          <div class="col s12 waves-effect waves-light">
+            <a
+              href="https://github.com/geoescobar/Weather-Dashboard"
+              target="_blank"
+              class="projects"
+              ><img class="project-img" src="./assets/weather-dashboard.png"
+            /></a>
+          </div>
+          <div class="col s6 waves-effect waves-light">
+            <a
+              href="https://github.com/geoescobar/Project1"
+              target="_blank"
+              class="projects"
+              ><img class="project-img" src="./assets/titan-tickets.png"
+            /></a>
+          </div>
+          <div class="col s6 waves-effect waves-light">
+            <a
+              href="https://github.com/geoescobar/Code-Quiz-GE"
+              target="_blank"
+              class="projects"
+              ><img class="project-img" src="./assets/code-quiz.png"
+            /></a>
+          </div>
+          <div class="col s6 waves-effect waves-light">
+            <a
+              href="https://github.com/geoescobar/Workday-Scheduler"
+              target="_blank"
+              class="projects"
+              ><img class="project-img" src="./assets/workday-scheduler.png"
+            /></a>
+          </div>
+          <div class="col s6 waves-effect waves-light">
+            <a
+              href="https://github.com/geoescobar/Password-Generator"
+              target="_blank"
+              class="projects"
+              ><img class="project-img" src="./assets/password-generator.png"
+            /></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="footer">
-        <ul class="social">
-            <li><a id="contact-me" href="https://www.instagram.com/george__escobar/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/george-escobar-2b22a9157/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/geoescobar" target="_blank">GitHub</a></li>
-            <li><a href="mailto:geo.escobar214@gmail.com" target="_blank">Email</a></li>
-        </ul>
-
-        
+      <ul class="social">
+        <li>
+          <a
+            id="contact-me"
+            href="https://www.instagram.com/george__escobar/"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/george-escobar-2b22a9157/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/geoescobar" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:geo.escobar214@gmail.com" target="_blank">Email</a>
+        </li>
+      </ul>
     </section>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/script.js"></script>     
-</body>
-
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
