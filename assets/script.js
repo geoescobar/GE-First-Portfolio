@@ -1,8 +1,5 @@
-console.log('test');
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var options = {
+console.log("test");
 
-    };
-    var instances = M.Dropdown.init(elems, options);
-  });
+$(document).ready(function () {
+  $(".carousel").carousel();
+});

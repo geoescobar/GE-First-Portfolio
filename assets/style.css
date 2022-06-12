@@ -1,211 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,100;0,300;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:ital,wght@0,100;0,300;1,500&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-li, a, button {
-    font-family: "Montserrat" , sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
 }
 
-header {
+/* header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 5px 20px;
     background-color: black;
+} */
+
+.tabs {
+  color: white;
 }
 
-
 .logo {
-    cursor: pointer;
-    margin-right: auto;
-    width: 75px;
-    height: 75px;
-    margin: 0;
+  cursor: pointer;
+  margin-right: auto;
+  width: 75px;
+  height: 75px;
+  margin: 0;
 }
 
 .nav-links {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links li {
-    display: inline-block;
-    padding: 0 20px;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 .nav-links li a {
-    transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .nav-links li a:hover {
-    color: #90ddf0;
-    
+  color: #90ddf0;
 }
 
 .homepage {
-    background-image: linear-gradient(to bottom right, #141e30, #243b55);
-    margin: 0vh;
-    padding: 200px;
-    color: white;
-    display: inline-block;
-    width: 100%;
+  background-image: linear-gradient(to bottom right, #141e30, #243b55);
+  margin: 0vh;
+  padding: 200px;
+  color: white;
+  display: inline-block;
+  width: 100%;
 }
 
 .homepage h1 {
-    text-transform: uppercase;
-    font-size: 100px;
-    font-family: "Montserrat" , sans-serif;
-    line-height: 200px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 200px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .homepage h1:hover {
-    color: #90ddf0;
-    transition: all 0.5s ease 0s;
-    letter-spacing: 3px;
+  color: #90ddf0;
+  transition: all 0.5s ease 0s;
+  letter-spacing: 3px;
 }
 
 .homepage p {
-    font-size: 30px;
-    font-family: "Montserrat" , sans-serif;
-    text-align: center;
-    word-spacing: 0.5px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  word-spacing: 0.5px;
 }
 
 .avi {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    float: right;
-    left: 50px;
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  float: right;
+  left: 50px;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
 }
 
 .about-me {
-    background: white;
-    padding: 200px;
-    color: black;
-    display: inline-block;
-    width: 100%;
-    margin: 0vh;
+  background: white;
+  padding: 200px;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  margin: 0vh;
 }
 
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-  .avi {
-    height: 400px;
-    width: 400px;
-  }
-  .image-container {
-    flex-basis: 40%
-  }
-  .about-text {
-    font-size: 20px;
-    padding-right: 30px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avi {
+  height: 400px;
+  width: 400px;
+}
+.image-container {
+  flex-basis: 40%;
+}
+.about-text {
+  font-size: 20px;
+  padding-right: 30px;
+}
 
 #about-title {
-    text-transform: uppercase;
-    font-size: 75px;
-    font-family: "Montserrat" , sans-serif;
-    /* text-align: center; */
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: "Montserrat", sans-serif;
+  /* text-align: center; */
 }
 
 #about-title:hover {
-    color: #90ddf0;
-    transition: all 0.5s ease 0s;
-    letter-spacing: 3px;
-    
+  color: #90ddf0;
+  transition: all 0.5s ease 0s;
+  letter-spacing: 3px;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.carousel-item:hover > .carousel-caption {
+  display: block !important;
+}
 
 .work {
-    background-image: linear-gradient(to bottom right, #141e30, #243b55);
-    margin: 0vh;
-    color: white;
-    display: inline-block;
-    font-family: "Montserrat" , sans-serif;
-    width: 100%;
-    padding: 100px;
+  background-image: linear-gradient(to bottom right, #141e30, #243b55);
+  margin: 0vh;
+  color: white;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 100px;
 }
 
 .projects {
-    display: inline-block;
-    transition: 0.2s
+  display: inline-block;
+  transition: 0.2s;
 }
 
 .projects:hover {
-transition: all 0.3s ease 0s;
-opacity: 50%;
+  transition: all 0.3s ease 0s;
+  opacity: 30%;
 }
 
 .work h2 {
-    text-transform: uppercase;
-    font-size: 75px;
-    text-align: center;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 75px;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .work h2:hover {
-    color: #90ddf0;
-    transition: all 0.5s ease 0s;
-    letter-spacing: 3px;
+  color: #90ddf0;
+  transition: all 0.5s ease 0s;
+  letter-spacing: 3px;
 }
 .work p {
-    text-align: center;
-    padding: 10px;
-    word-spacing: 2px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  word-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
 .social {
-    position: relative;
-    bottom: 20px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    padding: cover;
+  position: relative;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: cover;
 }
 
 .social li {
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: 100px;
-    font-size: 100px;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 100px;
+  font-size: 100px;
 }
 
 .social li a {
@@ -220,10 +229,10 @@ opacity: 50%;
 
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
-    color: #90ddf0;
+  color: #90ddf0;
 }
 
 .footer {
-    font-family: "Montserrat" , sans-serif;
-    background-color: black;
-} 
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}

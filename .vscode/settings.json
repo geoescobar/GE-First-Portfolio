@@ -1,0 +1,9 @@
+{
+    "turboConsoleLog.delimiterInsideMessage": "",
+    "turboConsoleLog.logMessagePrefix": "",
+    "turboConsoleLog.insertEnclosingClass": false,
+    "turboConsoleLog.insertEnclosingFunction": false,
+    "turboConsoleLog.includeFileNameAndLineNum": false,
+    "turboConsoleLog.addSemicolonInTheEnd": true,
+    "liveServer.settings.port": 5501
+}
